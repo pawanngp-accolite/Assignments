@@ -10,7 +10,7 @@ public interface personService {
 	
 	public Person getPerson(int id);
 	
-	//public Person UpdatePerson(int id,Person p);
+	
 	
 	
 	
