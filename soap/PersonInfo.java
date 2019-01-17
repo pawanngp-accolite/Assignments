@@ -39,15 +39,5 @@ public class PersonInfo implements personService{
 		}
 		return p;
 	}
-//	
-//	@Override
-//	public Person UpdatePerson(int id,Person p)
-//	{
-//		
-//		
-//		persons.put(p.getId(), p);
-//		
-//		return persons.get(id);
-//	}
-	
+
 }
