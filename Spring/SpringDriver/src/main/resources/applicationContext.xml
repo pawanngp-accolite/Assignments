@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- Setter Injection -->
+	<!-- <bean id="a" class="com.springdemo.HelloWorld"> <property 
+		name="name" value="XYZ"></property> </bean> -->
+
+	<!-- Constructor Injection -->
+	<!-- <bean id="helloWorld1" class="com.springdemo.HelloWorld">
+		<constructor-arg type="String" value="SAM"></constructor-arg>
+		<property name="name" value="XYZ"></property>
+	</bean> -->
+	
+	<!-- Autowiring using Annotation -->
+	<context:annotation-config />
+	
+	 <!-- Component Scan -->
+	<!-- <context:component-scan base-package="com.springdemo.tutorial.*" /> -->
+
+
+	<bean id="a" class="com.springdemo.tutorial.A" factory-method="B"> 
+	
+	</bean> 
+
+<!-- 	<bean id="b" class="com.springdemo.tutorial.B" scope="prototype">
+		<property name="p" value="1"></property>
+		<property name="q" value="2"></property>
+		<property name="r" value="3"></property>
+	</bean> -->
+	
+	<!-- <bean id="b" class="com.springdemo.tutorial.B">
+		<property name="p" value="7"></property>
+		<property name="q" value="8"></property>
+		<property name="r" value="3"></property>
+	</bean> -->
+	
+
+	
+
+	
+	
+	
+
+</beans>
