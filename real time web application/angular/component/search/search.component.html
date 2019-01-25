@@ -1,0 +1,17 @@
+<p class=jumbotron books>
+  search works
+ 
+</p>
+
+
+
+
+
+
+
+<div *ngFor="let book of books" class="container"  class="row">
+    <div class="col-sm-6"><a [routerLink]="['/book', book.id]" routerLinkActive="active">{{book.bookName}}</a></div>
+    <div class="col-sm-4"> <button type="button" (click)="checkout(book)" class="btn btn-light">
+        Checkout
+      </button></div>
+  </div>
